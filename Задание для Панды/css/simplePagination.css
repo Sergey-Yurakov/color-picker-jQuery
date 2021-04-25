@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  min-height: calc(100vh - 115px);
+  padding: 10px;
+  margin: 5px;
+}
+
+.pagination-page li {
+  list-style-type: none;
+  display: inline;
+  padding: 4px;
+}
+
+.pagination-page {
+  text-align: center;
+}
+
+table {
+  table-layout: fixed;
+  border: solid 2px gray;
+  border-collapse: collapse;
+
+}
+
+thead {
+  font-weight: bold;
+  background-color: #5d5dae;
+  color: white;
+}
+
+td {
+  border: solid 1px gray;
+  padding: 5px;
+}
+
+input {
+  margin: 4px;
+  border: solid 2px gray;
+  border-radius: 5px;
+}
+
+p {
+margin-left: 8px;
+}
+
+select {
+  margin-left: 5%;
+  margin-top: 15px;
+  min-width: 20%;
+  border: solid 1px gray;
+  border-radius: 20px;
+}
+
+fieldset {
+  margin: 15px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#red, #green, #blue {
+  float: left;
+  clear: left;
+  width: 300px;
+  margin: 15px;
+}
+
+#swatch {
+  width: 250px;
+  height: 150px;
+  margin-top: 18px;
+  margin-left: 350px;
+  background-image: none;
+  text-align: center;
+
+}
+
+#red .ui-slider-range { background: #ef2929; }
+#red .ui-slider-handle { border-color: #ef2929; }
+#green .ui-slider-range { background: #8ae234; }
+#green .ui-slider-handle { border-color: #8ae234; }
+#blue .ui-slider-range { background: #729fcf; }
+#blue .ui-slider-handle { border-color: #729fcf; }
+
+
+
+
+

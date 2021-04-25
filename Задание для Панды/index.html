@@ -1,0 +1,432 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link type="text/css" rel="stylesheet" href="css/simplePagination.css"/>
+
+
+  <!--  jQuery plugins-->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+  <link type="text/css" rel="stylesheet" href="css/simplePagination.css"/>
+
+<!--  <link rel="stylesheet" href="css/themes/blue/style.css" type="text/css" media="print, projection, screen" />-->
+
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+
+<fieldset>
+  <legend>
+    <i> Select</i></legend>
+  <button class="ui-button ui-widget ui-corner-all color" id="color" data-c="color">Color</button>
+  <button class="ui-button ui-widget ui-corner-all back" id="backgroundColor" data-c="bgc">BackgroundColor</button>
+
+</fieldset>
+
+<p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+  <span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 5px 0 0;"></span>
+  Simple Colorpicker
+</p>
+
+<div id="red"></div>
+<div id="green"></div>
+<div id="blue"></div>
+
+<div id="swatch" class="ui-widget-content ui-corner-all">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus eius laborum omnis quaerat!
+</div>
+
+<hr>
+  <!-- Add your site or application content here -->
+  <p>
+    <input id="myInput" type="text" placeholder="Filtration">
+  </p>
+
+  <p>
+    Name <input  type="text" id="name"> <br>
+    Created By <input  type="text" id="created"> <br>
+    Created Date <input  type="text" id="date">
+    <button id="but">Добавить значение в таблицу</button>
+  </p>
+  <hr>
+
+  <div class="wrapper">
+
+    <div class="content">
+
+      <table width="100%" class="table1 tablesorter" id="domainsTable">
+        <thead>
+        <tr class="post">
+          <td id="name_table">Name</td>
+          <td id="created_by">Created By</td>
+          <td id="date_table">Created Date</td>
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        <tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>Jul 6, 2006 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>Dec 10, 2002 5:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>Jan 12, 2003 11:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>Jan 18, 2001 9:12 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>Jul 6, 2006 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>Dec 10, 2002 5:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>Dec 10, 2002 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>Jul 6, 2006 9:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr><tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>Jul 6, 2006 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>Dec 10, 2002 5:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>Jan 12, 2003 11:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>Jan 18, 2001 9:12 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>Jul 6, 2006 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>Dec 10, 2002 5:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>Dec 10, 2002 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>Jul 6, 2006 9:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr><tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>Jul 6, 2006 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>Dec 10, 2002 5:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>Jan 12, 2003 11:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>Jan 18, 2001 9:12 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>Jul 6, 2006 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>Dec 10, 2002 5:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>Dec 10, 2002 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>Jul 6, 2006 9:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr><tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>Jul 6, 2006 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>Dec 10, 2002 5:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>Jan 12, 2003 11:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>Jan 18, 2001 9:12 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>Jul 6, 2006 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>Dec 10, 2002 5:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>Dec 10, 2002 8:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>Jul 6, 2006 9:14 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr><tr class="post">
+          <td>Window</td>
+          <td>John</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Door</td>
+          <td>Chris</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Floor</td>
+          <td>Michael</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Car</td>
+          <td>James</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+        <tr class="post">
+          <td>Bike</td>
+          <td>Steven</td>
+          <td>01/01/2014 12:00:00 AM</td>
+        </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="footer">
+      <div id="light-pagination" class="pagination-page"></div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <!--  Scripts jQuery-->
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!--  Pagination jQuery link-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+
+<!--  Sort plugin jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+
+
+
+
+
+  <!--  Files js-->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!--  <script>-->
+<!--    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
+<!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')-->
+<!--  </script>-->
+
+
+
+
+</body>
+
+</html>
