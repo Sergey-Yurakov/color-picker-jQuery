@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.butBackgroundColor {
+  background-color: rgb(59, 59, 199);
+}
+
+
 .content {
   min-height: calc(100vh - 115px);
   padding: 10px;
@@ -76,6 +81,9 @@ fieldset {
   margin-left: 350px;
   background-image: none;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -85,6 +93,8 @@ fieldset {
 #green .ui-slider-handle { border-color: #8ae234; }
 #blue .ui-slider-range { background: #729fcf; }
 #blue .ui-slider-handle { border-color: #729fcf; }
+
+
 
 
 

@@ -34,6 +34,7 @@ $(function($) {
 });
 
 
+
 //Filtration
 
     $("#myInput").on("keyup", function () {
@@ -59,23 +60,28 @@ $(function() {
 });
 
 
-//В качестве наглядности перефильтрации хотел сделать условные input, в которые мы вводим данные для таблицы и она
-//перефильтруется, но почему-то (пока не разобрался) данные при фильтрации не учитываются
 
-$('#but').click( function (e) {
-  let name = $('#name').val(),
-    created_by = $('#created').val(),
-    date_table = $('#date').val();
-  console.log(name, created_by, date_table);
-
-  $('#myTable').append($('<tr class="content">').append($('<td>').append(name)).append($('<td>').append(created_by)).append($('<td>').append(date_table)) );
-
-
-});
-
-
-//Цвет меняется разово, только по клику, пока не смог придумать решение, как реализовать полностью данную задачу
   //ColorPicker
+
+  let toogleColorBut;
+  $('#backgroundColor').on('click', () => {
+    
+    $('.back').addClass('ui-state-active');
+    $('.color').removeClass('ui-state-active');
+    toogleColorBut = true;
+    console.log('background-click');
+    
+
+  });
+
+  $('#color').on('click',  () => {
+    $('.color').addClass('ui-state-active');
+    $('.back').removeClass('ui-state-active');
+    toogleColorBut = false;
+    console.log('color-click');
+
+ });
+
   $( function() {
     function hexFromRGB(r, g, b) {
       let hex = [
@@ -96,23 +102,15 @@ $('#but').click( function (e) {
         blue = $( "#blue" ).slider( "value" ),
         hex = hexFromRGB( red, green, blue );
 
-       // $( "#swatch" ).css( "background-color", "#" + hex );
-       $('#backgroundColor').on('click', () => {
+        if (toogleColorBut == true) {
+          $( "#swatch" ).css( "background-color", "#" + hex );
+          console.log('background-color');
+        } else {
+          $( "#swatch" ).css( "color", "#" + hex );
+          console.log('color');
+        }
 
-         if ($('#backgroundColor').hasClass('back')) {
-           $( "#swatch" ).css( "background-color", "#" + hex );
-           console.log('У элемента есть класс back');
-         } else {
-           console.log('Элемент не содержит класс back');
-         }
-
-       });
-
-      $('#color').on('click',  e => {
-         $( "#swatch" ).css( "color", "#" + hex );
-        console.log(e.target);
-      });
-
+       
     }
 
     $( "#red, #green, #blue" ).slider({
